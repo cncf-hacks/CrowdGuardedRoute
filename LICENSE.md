@@ -1,0 +1,1 @@
+Please choose a license from the [OSI Approved Licenses](https://opensource.org/licenses) and update this file according to the [licensing a repository page](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository).
