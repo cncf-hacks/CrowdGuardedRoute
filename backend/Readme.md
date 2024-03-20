@@ -100,6 +100,8 @@ A tentative numerical interpretation based on Seoul's legal basis is as follows:
       ddl-auto: create  # Data schema create       
 ```
 
- Second, DB Schema create by JPA
+ Second, DB Schema create by JPA in your Database
 
- Third, Save data retrieved through Open Data Resource
+ Third, Collect data from Open Data Resource(ex Public API ..)
+ 
+ Fourth, Clean and store data according to schema
