@@ -27,8 +27,6 @@ We want to evaluate the safety of each coordinate and recommend a safe route thr
 The geohash-based safety evaluation model has many advantages, and the most important of them is the structure that is easy to expand.
 Safety is provided based on machine learning, and we collected various factors to evaluate it. This includes the location of police stations, fire stations and traffic light, brightness(illuminance) and moving speed information. By learning these factor, the safety score can be calculated, and if a new factor is added or the weight for each factor is adjusted, the result can be naturally mapped to geohash and provided to the user.
 
-![ModelStructure_finalv2.jpg](./safeexpo/image/ModelStructure_finalv2.jpg)
-
 Additionally, there are factors that can be obtained depending on the region. These include things like the locations of CCTVs in Korea (which are not provided in France). We are considering a configuration that creates a sub-machine learning model with these region-specific factors and concatenates it with the main model.
 
 On the one hand, it is easy for users to get feedback on their experiences using the route and add it as a factor in our safety evaluation.
