@@ -1,0 +1,39 @@
+{
+  "cli": {
+    "version": ">= 7.3.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "ORG_NAME": "sweetMyPotato",
+        "APP_ENV": "development"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "env": {
+        "ORG_NAME": "sweetMyPotato"
+      }
+    },
+    "production": {
+      "channel": "production",
+      "env": {
+        "ORG_NAME": "sweetMyPotato",
+        "APP_ENV": "production"
+      },
+      "autoIncrement": true
+    }
+  },
+  "submit": {
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "google/safeexpo-3ef048c60358.json",
+        "track": "internal",
+        "releaseStatus": "draft"
+      }
+    }
+  }
+}

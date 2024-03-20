@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "safeexpo",
+    "slug": "safeexpo",
+    "scheme": "safeexpo",
+    "orientation": "portrait",
+    "icon": "./assets/safeexpo.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/safeexpo_1.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "safeexpo"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/safeexpo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.sweetmypotato.safeexpo",
+      "permissions": [
+        "FOREGROUND_SERVICE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a5597732-7680-4acc-9444-1d6860daeea5"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/a5597732-7680-4acc-9444-1d6860daeea5"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "isAndroidBackgroundLocationEnabled": true,
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+        }
+      ]
+    ]
+  }
+}

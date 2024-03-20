@@ -1,0 +1,23 @@
+spring:
+  profiles:
+    group:
+      "local": "common, local"
+      "product": "common, product"
+    active: local
+
+---
+spring:
+  config.activate.on-profile: "common"
+  output.ansi.enabled: always
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: none        # DB 초기화 전략 (none, create, create-drop, update, validate)
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        format_sql: true      # 쿼리 로그 포맷 (정렬)
+        show_sql: true        # 쿼리 로그 출력
+        jdbc.batch_size: 1000
+        order_inserts: true
+        order_updates: true
